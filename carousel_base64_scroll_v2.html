@@ -9,7 +9,7 @@
         .alin-carousel-wrapper * {
             box-sizing: border-box;
         }
-
+    
         .alin-carousel-wrapper {
             text-align: center;
             display: flex;
@@ -19,7 +19,7 @@
             /* border: 1px solid blue; */
             overflow-x: hidden;
         }
-
+    
         .alin-carousel {
             width: 85%;
             display: flex;
@@ -31,24 +31,24 @@
             text-align: center;
             margin-top: 1rem;
         }
-
+    
         .alin-slide--footer {
             margin-top: 2rem;
         }
-
+    
         .alin-slide {
             /* border: 1px solid rgb(1, 210, 1); */
         }
-
+    
         .alin-slide p {
             margin: 0;
         }
-
+    
         .alin-slide {
             width: 150px;
             margin: 0 auto;
         }
-
+    
         .alin-slide--title {
             font-weight: 700!important;
             margin: 0;
@@ -63,15 +63,22 @@
             line-height: 1;
             margin-bottom: 1rem;
         }
-
+    
         .alin-carousel .img-wrapper {
             width: 150px;
             overflow: hidden;
             border-radius: 2px;
             margin: 0;
         }
+    
 
-        @media screen and (max-width: 768px) and (orientation: portrait) {
+        /* -------------------------------------------------------------- */
+        /*              Mobile Phones Media Queries                       */
+        /* -------------------------------------------------------------- */
+        @media screen and (max-width: 760px) and (orientation: portrait) {
+            body {
+                background-color: darkkhaki!important;
+            }
             .alin-carousel-wrapper {
                 width: 100%;
                 overflow-x: auto;
@@ -83,7 +90,7 @@
                 padding: 0;
                 padding-top: 2em;
             }
-
+    
             .alin-carousel {
                 width: 100%;
                 display: flex;
@@ -97,7 +104,7 @@
                 margin: 0;
                 /* transform: translateX(130px); */
             }
-
+    
             .alin-slide {
                 flex: 0 0 45%;
                 /* Update this to show 2 alin-slide-s at a time */
@@ -126,11 +133,11 @@
                 width: 100%;
                 overflow: hidden;
             }
-
+    
             .alin-slide .img-wrapper img {
                 width: 100%;
             }
-
+    
             .alin-slide--footer {
                 margin-top: 1rem;
             }
@@ -138,12 +145,19 @@
             #product-listings-description {
                 margin-bottom: 0;
             }
-
+    
         }
-
-        @media screen and (min-width: 834px) and (orientation: portrait) {
+    
+        /* -------------------------------------------------------------- */
+        /*              Mobile Phones Landscape Media Queries             */
+        /* -------------------------------------------------------------- */
+        @media screen and (max-width: 800px) and (orientation: landscape) {
+            body {
+                overflow-x: hidden!important;
+                background-color: lightseagreen!important;
+            }
             .alin-carousel-wrapper {
-                width: 70%;
+                width: 75%;
                 overflow-x: auto;
                 /* Enable horizontal scrolling */
                 overflow-x: hidden;
@@ -154,7 +168,7 @@
                 padding-top: 2em;
                 margin: 0 auto;
             }
-
+    
             .alin-carousel {
                 width: 100%;
                 display: flex;
@@ -168,9 +182,9 @@
                 margin: 0;
                 /* transform: translateX(130px); */
             }
-
+    
             .alin-slide {
-                flex: 0 0 45%;
+                flex: 0 0 23%;
                 /* Update this to show 2 alin-slide-s at a time */
                 scroll-snap-align: start;
                 justify-content: center;
@@ -197,11 +211,11 @@
                 width: 100%;
                 overflow: hidden;
             }
-
+    
             .alin-slide .img-wrapper img {
                 width: 100%;
             }
-
+    
             .alin-slide--footer {
                 margin-top: 1rem;
             }
@@ -209,8 +223,163 @@
             #product-listings-description {
                 margin-bottom: 0;
             }
-
         }
+
+
+        /* -------------------------------------------------------------- */
+        /*       Tablets and Desktop Portrait Media Queries               */
+        /* -------------------------------------------------------------- */
+        @media screen and (min-width: 1200px) and (orientation: portrait) {
+        body {
+            overflow-x: hidden!important;
+            background-color: lightgray!important;
+        }
+        .alin-carousel-wrapper {
+            width: 55%;
+            overflow-x: auto;
+            /* Enable horizontal scrolling */
+            overflow-x: hidden;
+            /* Disable horizontal scrolling */
+            /* border: 2px solid red; */
+            margin: 0;
+            padding: 0;
+            padding-top: 2em;
+            margin: 0 auto;
+        }
+
+        .alin-carousel {
+            width: 100%;
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: flex-start;
+            gap: .3em;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            -webkit-overflow-scrolling: touch;
+            padding: 0;
+            margin: 0;
+            /* transform: translateX(130px); */
+        }
+
+        .alin-slide {
+            flex: 0 0 23%;
+            /* Update this to show 2 alin-slide-s at a time */
+            scroll-snap-align: start;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+        }
+        .alin-slide--title {
+            font-weight: 700!important;
+            margin: 0;
+            padding: 0;
+            text-align: center!important;
+        }
+        .alin-slide--desc {
+            font-weight: 400!important;
+            margin: 0;
+            padding: 0;
+            text-align: center!important;
+            line-height: 1;
+            margin-bottom: 1rem;
+        }
+        .alin-slide .img-wrapper {
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .alin-slide .img-wrapper img {
+            width: 100%;
+        }
+
+        .alin-slide--footer {
+            margin-top: 1rem;
+        }
+        .product-listings-title__container,
+        #product-listings-description {
+            margin-bottom: 0;
+        }
+    }
+
+
+        /* -------------------------------------------------------------- */
+        /*       Tablets and Desktop Landscape Media Queries              */
+        /* -------------------------------------------------------------- */
+        @media screen and (min-width: 1200px) and (orientation: landscape) {
+        body {
+            overflow-x: hidden!important;
+            background-color: mediumpurple!important;
+        }
+        .alin-carousel-wrapper {
+            width: 85%;
+            overflow-x: auto;
+            /* Enable horizontal scrolling */
+            overflow-x: hidden;
+            /* Disable horizontal scrolling */
+            /* border: 2px solid red; */
+            margin: 0;
+            padding: 0;
+            padding-top: 2em;
+            margin: 0 auto;
+        }
+
+        .alin-carousel {
+            width: 100%;
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: flex-start;
+            gap: .3em;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            -webkit-overflow-scrolling: touch;
+            padding: 0;
+            margin: 0;
+            /* transform: translateX(130px); */
+        }
+
+        .alin-slide {
+            flex: 0 0 15.9%;
+            /* Update this to show 2 alin-slide-s at a time */
+            scroll-snap-align: start;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+        }
+        .alin-slide--title {
+            font-weight: 700!important;
+            margin: 0;
+            padding: 0;
+            text-align: center!important;
+        }
+        .alin-slide--desc {
+            font-weight: 400!important;
+            margin: 0;
+            padding: 0;
+            text-align: center!important;
+            line-height: 1;
+            margin-bottom: 1rem;
+        }
+        .alin-slide .img-wrapper {
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .alin-slide .img-wrapper img {
+            width: 100%;
+        }
+
+        .alin-slide--footer {
+            margin-top: 1rem;
+        }
+        .product-listings-title__container,
+        #product-listings-description {
+            margin-bottom: 0;
+        }
+    }
     </style>
 
 </head>

@@ -1,0 +1,202 @@
+<style>
+    /* override npit valuews */
+    .product-listings-title {
+        width: 100%!important;
+        padding: 1em!important;
+    }
+    /* Base Styles */
+    .alin-carousel-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        overflow-x: hidden;
+        margin: 0 auto;
+    }
+
+    .alin-carousel {
+        width: 100%;
+        display: flex;
+        justify-content: start;
+        overflow-x: scroll;
+        gap: 0.5em;
+        margin-top: 1rem;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .alin-slide {
+        width: 150px;
+        margin: 0 auto;
+        flex: 0 0 45%;
+        scroll-snap-align: start;
+    }
+
+    .alin-slide--title,
+    .alin-slide--desc {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        font-weight: 700;
+    }
+
+    .alin-slide--desc {
+        font-weight: 400;
+        line-height: 1;
+        margin-bottom: 1rem;
+    }
+
+    .img-wrapper {
+        width: 100%;
+        overflow: hidden;
+        border-radius: 2px;
+    }
+
+    .img-wrapper img {
+        width: 100%!important;
+        max-width: 100%!important;
+    }
+
+
+    .alin-carousel-wrapper img {
+        width: 100%!important;
+        max-width: 100%!important;
+    }
+
+    .logo img {
+        max-width: 110px!important;
+        width: 100%!important;
+    }
+
+
+    /* Medium mobile phones */
+    @media screen and (min-width: 800px) and (orientation: landscape) {
+        .alin-carousel-wrapper,
+        .alin-carousel {
+            width: 100%;
+        }
+
+        .alin-slide--title,
+        .alin-slide--desc {
+            text-align: left;
+        }
+        .alin-slide {
+            flex: 0 0 23%;
+        }
+        }
+
+    /* Larger than mobile phones */
+    @media screen and (min-width: 852px) and (orientation: landscape) {
+        .alin-carousel-wrapper,
+        .alin-carousel {
+            width: 100%;
+        }
+
+        .alin-slide--title,
+        .alin-slide--desc {
+            text-align: left;
+        }
+        .alin-slide {
+            flex: 0 0 23%;
+        }
+    }
+
+    /* Tablets Portrait */
+    @media screen and (min-width: 834px) and (orientation: portrait) {
+        .alin-slide {
+            flex: 0 0 23%;
+        }
+    }
+
+    /* Tablets Portrait */
+    @media screen and (min-width: 1024px) and (orientation: portrait) {
+        .alin-slide {
+            flex: 0 0 23%;
+        }
+    }
+
+    /* Tablets and Small Laptops Landscape */
+    @media screen and (min-width: 1366px) and (orientation: landscape){
+        .alin-carousel-wrapper {
+            width: 85%;
+        }
+
+        .alin-slide {
+            flex: 0 0 18%;
+        }
+    }
+
+
+    /* Large Laptops and Desktops */
+    @media screen and (min-width: 1400px) {
+        .alin-slide {
+            flex: 0 0 22.5%;
+        }
+    }
+</style>
+<p>
+    Select from our irresistible range of cakes, ready to be picked up in store, or delivered straight to your door.
+    Including our range of cakes available for nationwide delivery. All of our cakes are handmade, fresh and
+    baked to order.
+</p>
+<div class="alin-carousel-wrapper">
+    <div class="alin-carousel">
+        <div class="alin-slide">
+            <div class="alin-img-wrapper">
+                <a href="https://www.lolascupcakes.co.uk/SubMenu1/3/Classic-Cakes.htm"><img alt="Image Cake - Small"
+                        width="150" src="/images/NewFolder/Rectangle 14568.png" /></a>
+            </div>
+            <div class="alin-slide--title">Classic Cakes</div>
+            &nbsp;
+        </div>
+        <div class="alin-slide">
+            <div class="alin-img-wrapper">
+                <a href="https://www.lolascupcakes.co.uk/SubMenu1/3/Classic-Cakes.htm"><img alt="Image Cake - Small"
+                        width="150" src="/images/NewFolder/Rectangle 14568.png" /></a>
+            </div>
+            <div class="alin-slide--title">Classic Cakes</div>
+            &nbsp;
+        </div>
+        <div class="alin-slide">
+            <div class="alin-img-wrapper">
+                <a href="https://www.lolascupcakes.co.uk/SubMenu1/3/Classic-Cakes.htm"><img alt="Image Cake - Small"
+                        width="150" src="/images/NewFolder/Rectangle 14568.png" /></a>
+            </div>
+            <div class="alin-slide--title">Classic Cakes</div>
+            &nbsp;
+        </div>
+        <div class="alin-slide">
+            <div class="alin-img-wrapper">
+                <a href="https://www.lolascupcakes.co.uk/SubMenu1/3/Classic-Cakes.htm"><img alt="Image Cake - Small"
+                        width="150" src="/images/NewFolder/Rectangle 14568.png" /></a>
+            </div>
+            <div class="alin-slide--title">Classic Cakes</div>
+            &nbsp;
+        </div>
+        <div class="alin-slide">
+            <div class="alin-img-wrapper">
+                <a href="https://www.lolascupcakes.co.uk/SubMenu1/265/Two-Tier-Cakes.htm"><img alt="Image Cake - Medium"
+                        width="150" src="/images/NewFolder/Rectangle 14567.png" /></a>
+            </div>
+            <div class="alin-slide--title">Two Tier Cakes</div>
+            &nbsp;
+        </div>
+        <div class="alin-slide">
+            <div class="alin-img-wrapper">
+                <a href="https://www.lolascupcakes.co.uk/SubMenu1/26/Tall-Cakes.htm"><img alt="Image Cake - Large"
+                        width="150" src="/images/NewFolder/Rectangle 14565.png" /></a>
+            </div>
+            <div class="alin-slide--title">Tall Cakes</div>
+            &nbsp;
+        </div>
+        <div class="alin-slide">
+            <div class="alin-img-wrapper">
+                <a href="https://www.lolascupcakes.co.uk/SubMenu1/97/Naked-Cakes.htm"><img
+                        alt="Image Cake - Extra Large" width="150" src="/images/NewFolder/Rectangle 14566.png" /></a>
+            </div>
+            <div class="alin-slide--title">Opera Cakes</div>
+            &nbsp;
+        </div>
+    </div>
+</div>
